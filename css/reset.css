@@ -1,0 +1,64 @@
+/* 样式初始化 */
+html,body,div,ul,ol,li,a,img,p,form,input{
+	padding: 0;
+	margin: 0;
+	/* 设置盒模型 */
+	box-sizing: border-box;
+	/* 去除移动端特有的点击高亮 */
+	-webkit-tap-highlight-color: transparent;
+}
+
+body{
+	/* 设置微软雅黑字体,若没有则用默认字体 */
+	font-family: "微软雅黑",sans-serif;
+	font-size: 13px;
+}
+
+ul,ol{
+	/* 去除列表项标点 */
+	list-style: none;
+}
+
+a,
+a:hover{
+	color: #666;
+	/* 去除a标签的下划线 */
+	text-decoration: none;
+}
+
+input{
+	/* 清除文本框获取焦点时默认的边框阴影 */
+	outline: none;
+	/* 去除边框 */
+	border: none;
+	/* 添加边框 */
+	border: 1px solid #ccc;
+}
+
+/* 公共类 */
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.m_left10{
+	margin-left: 10px;
+}
+.m_right10{
+	margin-right: 10px;
+}
+.m_top10{
+	margin-top: 10px;
+}
+
+
+.clearFloat::after,
+.clearFloat::before{
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
